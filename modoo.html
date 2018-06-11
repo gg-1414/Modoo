@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Chicken & Noodle Bar</title>
+    <link rel="stylesheet" type="text/css"
+        href="stylesheet.css"/>
+    <meta charset="UTF-8">
+    <script type='text/javascript' src="./script.js"></script>
+  </head>
+  <body>
+    <div class="topnav" id="myTopnav">
+      <ul class="nav-header">
+        <li class="header-section active">
+          <a href="#" class="header-text">MODOO CHICKEN & NOODLE</a>
+        </li>
+        <li class="header-section">
+          <a href="#" id="about-btn" class="header-text">ABOUT</a>
+        </li>
+        <li class="header-section">
+          <a href="http://eat24hrs.com/restaurants/order2/menu.php?id=102752&utm_source=102752&utm_medium=Website&utm_campaign=WRestaurantSite&utm_content=OrderButton" class="header-text">MENU</a>
+        </li>
+        <li class="header-section">
+          <a href="#" id="contact-btn" class="header-text">CONTACT</a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="cover-bg">
+      <div id="bg-img">
+        <div class="bg-img-tint"></div>
+        <div class="svg">
+
+        </div>
+
+        <div class="location-div">
+          <span class="location">216-17 Northern Blvd</span>
+        </div>
+        <div class="location-div location-cont-div">
+          <span class="location cont">Bayside, NY 11361</span>
+        </div>
+        <div class="cover-text-div">
+          <a href="#" class="header-text dine-in">Dine In</a>
+          <a href="http://eat24hrs.com/restaurants/order2/menu.php?id=102752&utm_source=102752&utm_medium=Website&utm_campaign=WRestaurantSite&utm_content=orderbutton"
+            class="header-text cover-text">Take Out</a>
+        </div>
+        <!-- <img src="img/modoo-logo-chicken.png" class="logo"> -->
+      </div>
+    </div>
+
+    <div class="bottom-container">
+      <div class="border"></div>
+      <!-- hours -->
+      <!-- <div class="section col-odd">
+        <div class="row row-day">
+          <span>m-th</span>
+        </div>
+        <div class="row">
+          <span>12-3</span>
+        </div>
+        <div class="row">
+          <span>5-11</span>
+        </div>
+      </div>
+      <div class="section col-even">
+        <div class="row row-day">
+          <span>f-s</span>
+        </div>
+        <div class="row">
+          <span>12-3</span>
+        </div>
+        <div class="row">
+          <span>5-11:30</span>
+        </div>
+      </div>
+      <div class="section col-odd">
+        <div class="row row-day">
+          <span>s</span>
+        </div>
+        <div class="row">
+          <span>12-3</span>
+        </div>
+        <div class="row">
+          <span>5-10</span>
+        </div> -->
+      </div>
+      <!-- phone -->
+      <!-- <span class="phone">347.836.8382</span> -->
+
+      <div class="about">
+        <div id="about-modal" class="modal">
+
+          <!-- Modal content -->
+          <div class="modal-content">
+            <div class="modal-header">
+              <span class="close">&times;</span>
+              <h2>about</h2>
+            </div>
+            <div class="modal-body">
+              <p>Some text in the Modal Body</p>
+              <p>Some other text...</p>
+              <p>Some other text...</p>
+              <p>Some other text...</p>
+              <p>Some other text...</p>
+              <p>Some other text...</p>
+            </div>
+            <div class="modal-footer">
+              <h3>modoo</h3>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="contact-modal">
+        <div id="contact-modal" class="modal">
+
+          <!-- Modal content -->
+          <div class="modal-content">
+            <div class="modal-header">
+              <span class="close">&times;</span>
+              <h2>contact</h2>
+            </div>
+            <div class="modal-body">
+              <div class="form-container">
+                <form action="/action_page.php">
+                  <div class="row">
+                    <div class="col-25">
+                      <label for="name">Name</label>
+                    </div>
+                    <div class="col-75">
+                      <input type="text" id="name" name="name" placeholder="Your name..">
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-25">
+                      <label for="phone">Phone</label>
+                    </div>
+                    <div class="col-75">
+                      <input type="text" id="phone" name="phone" placeholder="Your phone number..">
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-25">
+                      <label for="subject">Subject</label>
+                    </div>
+                    <div class="col-75">
+                      <textarea id="subject" name="subject" placeholder="Write something.." style="height:150px"></textarea>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <input type="submit" value="Submit">
+                  </div>
+                </form>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <h3>modoo</h3>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- <script>
+      var aboutModal = document.getElementById('about-modal');
+      var contactModal = document.getElementById('contact-modal');
+      var aboutBtn = document.getElementById("about-btn");
+      var contactBtn = document.getElementById("contact-btn");
+      var close = document.getElementsByClassName("close")[0];
+
+      aboutBtn.onclick = function() {
+          aboutModal.style.display = "block";
+      }
+
+      contactBtn.onclick = function() {
+          contactModal.style.display = "block";
+      }
+
+      close.onclick = function() {
+          aboutModal.style.display = "none";
+          contactModal.style.display = "none";
+      }
+
+      window.onclick = function(event) {
+          if (event.target == aboutModal || event.target == contactModal) {
+              aboutModal.style.display = "none";
+              contactModal.style.display = "none";
+          }
+      }
+      </script> -->
+
+  </body>
+</html>

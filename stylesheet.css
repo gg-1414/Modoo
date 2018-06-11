@@ -1,0 +1,437 @@
+* {box-sizing: border-box;}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: monospace;
+}
+
+.nav-header {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow: hidden;
+}
+
+.header-section {
+  display: block;
+  background-color: #1d1d1d;
+  width: 25%;
+  float: left;
+  padding: 17px 0px;
+  text-align: center;
+  border-bottom: 2px solid transparent;
+}
+
+.header-section:hover {
+  border-bottom: 2px solid #ff8d00;
+  cursor: pointer;
+}
+
+.active {
+  border-bottom: 2px solid #ff8d00;
+}
+
+.header-text {
+  text-decoration: none;
+  color: white;
+  text-transform: lowercase;
+  font-family: inherit;
+  font-size: 15px;
+}
+
+.cover-bg {
+  width: 100%;
+  height: 80vh;
+  display: block;
+  float: left;
+}
+
+#bg-img {
+  background: url("./img/shoyu-ramen.jpg");
+  height: 80vh;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-width: 500px;
+}
+
+.bg-img-tint {
+  width: 100%;
+  height: 100%;
+  background-color: #232323;
+  opacity: 0.4;
+}
+
+.location-div {
+  position: absolute;
+  top: 40%;
+  width: 100%;
+  text-align: center;
+  font-size: 15px;
+}
+
+.location-cont-div {
+  top: 44%;
+}
+
+.location {
+  color: #fbffef;
+  padding: 5px;
+  text-shadow: 1px 7px 7px #000000;
+  /* border: 2px solid #ffffff91;
+  border-bottom-color: #1e1c1c;
+  border-top-color: #1e1c1c;
+  border-left-color: #ff8d0100;
+  border-right-color: #ff8d0100; */
+}
+
+.cont {
+  top: 35%;
+}
+
+.cover-text-div {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  font-size: 27px;
+  letter-spacing: 5px;
+}
+
+.cover-text {
+  border: 2px solid white;
+  padding: 8px 50px;
+  margin: 20px;
+  background-color: #17171782;
+  text-shadow: 1px 7px 7px #000000;
+}
+
+.cover-text:hover {
+  background-color: #000000a6;
+  /* color: black; */
+  border: 2px solid #ff8d00;
+}
+
+.dine-in {
+  border: 2px solid #ff8d00;
+  padding: 8px 50px;
+  margin: 20px;
+  background-color: #17171782;
+  text-shadow: 1px 7px 7px #000000;
+}
+
+.dine-in:hover {
+  background-color: #000000a6;
+  border: 2px solid #ff8d00;
+}
+
+.logo {
+  width: 105px;
+  position: absolute;
+  top: 70%;
+  left: 90%;
+}
+
+/* .restaurant-name {
+  position: absolute;
+  bottom: 125px;
+  left: 14px;
+  font-size: 64px;
+  color: #fff;
+  font-weight: 400;
+  font-variant: small-caps;
+  min-width: 600px;
+  text-decoration: none;
+  color: #fff;
+  text-transform: lowercase;
+  font-family: inherit;
+  font-size: 16px;
+} */
+
+/* .container {
+    width: 50%;
+    height: 600px;
+    background-color: #5f5b5b;
+    background-size: cover;
+    margin-top: 15px;
+    border: 2px solid #0000007a;
+    display: block;
+    float: left;
+} */
+.bottom-container {
+  height: 93px;
+  width: 100%;
+  background-color: #1d1c1c;
+  display: block;
+  float: left;
+}
+
+.border {
+  height: 2px;
+  width: 100%;
+  background-color: #ff8d00;
+  display: block;
+  float: left;
+}
+
+.section {
+  display: inline-block;
+  width: 106px;
+  height: 100%;
+  float: left;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.col-odd {
+  color: #ff9f2ae0;
+}
+
+.col-even {
+  color: #ffffffdb;
+}
+
+.row {
+  height: 20%;
+  width: 100%;
+  margin: 4px;
+}
+
+.row-day {
+  height: 25%;
+  font-size: 17px;
+  /* padding-top: 11px;  */
+  padding-top: 2px;
+}
+
+.phone {
+  display: inline-block;
+  float: right;
+  font-size: 17px;
+  margin: 20px;
+  color: #ffffffeb;
+  margin-right: 35px;
+}
+
+/* Add a background color to the top navigation */
+.topnav {
+    background-color: #1d1d1d;
+    overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+
+/* Change the color of links on hover */
+.topnav a:hover {
+    /* color: #ff7349; */
+}
+
+/* Hide the link that should open and close the topnav on small screens */
+.topnav .icon {
+    display: none;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    -webkit-animation-name: fadeIn; /* Fade in the background */
+    -webkit-animation-duration: 0.4s;
+    animation-name: fadeIn;
+    animation-duration: 0.4s
+}
+
+/* Modal Content */
+.modal-content {
+    position: fixed;
+    bottom: 0;
+    background-color: #fefefe;
+    width: 100%;
+    -webkit-animation-name: slideIn;
+    -webkit-animation-duration: 0.4s;
+    animation-name: slideIn;
+    animation-duration: 0.4s
+}
+
+/* The Close Button */
+.close {
+    color: #ff8d00;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-header {
+    padding: 2px 16px;
+    background-color: #201b17;
+    color: white;
+}
+
+.modal-footer {
+    padding: 2px 16px;
+    background-color: #201b17;
+    color: white;
+}
+
+/* Add Animation */
+@-webkit-keyframes slideIn {
+    from {bottom: -300px; opacity: 0}
+    to {bottom: 0; opacity: 1}
+}
+
+@keyframes slideIn {
+    from {bottom: -300px; opacity: 0}
+    to {bottom: 0; opacity: 1}
+}
+
+@-webkit-keyframes fadeIn {
+    from {opacity: 0}
+    to {opacity: 1}
+}
+
+@keyframes fadeIn {
+    from {opacity: 0}
+    to {opacity: 1}
+}
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #000;
+    border-radius: 4px;
+    resize: vertical;
+}
+
+label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+}
+
+input[type=submit] {
+    background-color: #313131;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+}
+
+input[type=submit]:hover {
+    background-color: #545454;
+}
+
+.form-container {
+    background-color: #f2f2f2;
+    padding: 20px;
+    width: 60%;
+}
+
+.col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+}
+
+.col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+@media screen and (max-width: 1040px) {
+  /* .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  } */
+  #bg-img {
+    height: 100%;
+    width: 100%;
+    background-position: center;
+  }
+  .logo {
+    width: 90px;
+    left: 80%;
+    top: 75%;
+  }
+  .bottom-container {
+    height: 14vh;
+  }
+}
+
+@media screen and (max-width: 795px) {
+  #bg-img {
+    height: 100%;
+    width: 100%;
+    background-position: center;
+  }
+  .header-section {
+    padding: 17px 0 10px;
+  }
+  .header-text {
+    font-size: 12px;
+  }
+  .cover-text-div {
+    letter-spacing: 1px;
+  }
+  .cover-text {
+    padding: 15px 30px;
+    margin: 15px;
+  }
+  .dine-in {
+    padding: 15px 30px;
+    margin: 15px;
+  }
+  .bottom-container {
+    height: 14vh;
+  }
+  .logo {
+    width: 80px;
+    left: 78%;
+    top: 75%;
+  }
+  .section {
+    width: 52px;
+  }
+  .row {
+    font-size: 12px;
+  }
+  .row-day {
+    font-size: 14px;
+    height: 21%;
+  }
+  .phone {
+    font-size: 14px;
+    margin: 15px;
+  }
+  .col-25, .col-75, input[type=submit] {
+      width: 100%;
+      margin-top: 0;
+  }
+}
