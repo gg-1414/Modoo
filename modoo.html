@@ -96,7 +96,7 @@
               <h2>about</h2>
             </div>
             <div class="modal-body">
-              <p>Some text in the Modal Body</p>
+              <p>Some text in the body</p>
               <p>Some other text...</p>
               <p>Some other text...</p>
               <p>Some other text...</p>
@@ -141,6 +141,14 @@
                   </div>
                   <div class="row">
                     <div class="col-25">
+                      <label for="email">Email</label>
+                    </div>
+                    <div class="col-75">
+                      <input type="text" id="email" name="email" placeholder="Your email..">
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-25">
                       <label for="subject">Subject</label>
                     </div>
                     <div class="col-75">
@@ -155,39 +163,13 @@
             </div>
             <div class="modal-footer">
               <h3>modoo</h3>
+              <p>347-836-8382</p>
+
             </div>
           </div>
 
         </div>
       </div>
-
-      <!-- <script>
-      var aboutModal = document.getElementById('about-modal');
-      var contactModal = document.getElementById('contact-modal');
-      var aboutBtn = document.getElementById("about-btn");
-      var contactBtn = document.getElementById("contact-btn");
-      var close = document.getElementsByClassName("close")[0];
-
-      aboutBtn.onclick = function() {
-          aboutModal.style.display = "block";
-      }
-
-      contactBtn.onclick = function() {
-          contactModal.style.display = "block";
-      }
-
-      close.onclick = function() {
-          aboutModal.style.display = "none";
-          contactModal.style.display = "none";
-      }
-
-      window.onclick = function(event) {
-          if (event.target == aboutModal || event.target == contactModal) {
-              aboutModal.style.display = "none";
-              contactModal.style.display = "none";
-          }
-      }
-      </script> -->
 
   </body>
 </html>

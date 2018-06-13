@@ -289,6 +289,14 @@ body {
     background-color: #201b17;
     color: white;
 }
+.modal-footer h3 {
+  display: inline-block;
+}
+
+.modal-footer p {
+  display: inline-block;
+  margin: 5px;
+}
 
 /* Add Animation */
 @-webkit-keyframes slideIn {
