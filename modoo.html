@@ -7,10 +7,14 @@
     <meta charset="UTF-8">
     <script type='text/javascript' src="./script.js"></script>
   </head>
+
   <body>
     <div class="topnav" id="myTopnav">
       <ul class="nav-header">
         <li class="header-section active">
+          <div id="logo">
+            <img src="./img/modoo-logo-chicken4.png" id="logo-img">
+          </div>
           <a href="#" class="header-text">MODOO CHICKEN & NOODLE</a>
         </li>
         <li class="header-section">
@@ -23,15 +27,11 @@
           <a href="#" id="contact-btn" class="header-text">CONTACT</a>
         </li>
       </ul>
-    </div>
+    </div> <!-- end topnav -->
 
-    <div class="cover-bg">
+    <div class="cover-bg"> <!-- background image -->
       <div id="bg-img">
         <div class="bg-img-tint"></div>
-        <div class="svg">
-
-        </div>
-
         <div class="location-div">
           <span class="location">216-17 Northern Blvd</span>
         </div>
@@ -39,137 +39,134 @@
           <span class="location cont">Bayside, NY 11361</span>
         </div>
         <div class="cover-text-div">
-          <a href="#" class="header-text dine-in">Dine In</a>
+          <a href="#" id="dine-in-btn" class="header-text cover-text dine-in">Dine In</a>
           <a href="http://eat24hrs.com/restaurants/order2/menu.php?id=102752&utm_source=102752&utm_medium=Website&utm_campaign=WRestaurantSite&utm_content=orderbutton"
             class="header-text cover-text">Take Out</a>
         </div>
-        <!-- <img src="img/modoo-logo-chicken.png" class="logo"> -->
       </div>
-    </div>
+    </div> <!-- end cover-bg -->
 
     <div class="bottom-container">
       <div class="border"></div>
-      <!-- hours -->
-      <!-- <div class="section col-odd">
-        <div class="row row-day">
-          <span>m-th</span>
-        </div>
-        <div class="row">
-          <span>12-3</span>
-        </div>
-        <div class="row">
-          <span>5-11</span>
-        </div>
-      </div>
-      <div class="section col-even">
-        <div class="row row-day">
-          <span>f-s</span>
-        </div>
-        <div class="row">
-          <span>12-3</span>
-        </div>
-        <div class="row">
-          <span>5-11:30</span>
-        </div>
-      </div>
-      <div class="section col-odd">
-        <div class="row row-day">
-          <span>s</span>
-        </div>
-        <div class="row">
-          <span>12-3</span>
-        </div>
-        <div class="row">
-          <span>5-10</span>
-        </div> -->
-      </div>
-      <!-- phone -->
-      <!-- <span class="phone">347.836.8382</span> -->
+    </div>
 
-      <div class="about">
-        <div id="about-modal" class="modal">
+    <div class="about">
+      <div id="about-modal" class="modal">
 
-          <!-- Modal content -->
-          <div class="modal-content">
-            <div class="modal-header">
-              <span class="close">&times;</span>
-              <h2>about</h2>
+        <!-- Modal content -->
+        <div class="modal-content">
+          <div class="modal-header">
+            <span class="close">&times;</span>
+            <h2>about</h2>
+          </div>
+          <div class="modal-body about-body">
+            <div id="about-pic">
+              <img src="./img/modoo-outside-lit.jpg">
             </div>
-            <div class="modal-body">
-              <p>Some text in the body</p>
-              <p>Some other text...</p>
-              <p>Some other text...</p>
-              <p>Some other text...</p>
-              <p>Some other text...</p>
-              <p>Some other text...</p>
-            </div>
-            <div class="modal-footer">
-              <h3>modoo</h3>
+            <div class="about-text">
+              <p>Are you hungry in Bayside? Welcome to Modoo Chicken & Noodle Bar, where you can find great Korean food available for delivery or takeout.
+                Check out our online menu and place an order from our site. Don’t want to order now? Visit us at 216-17 Northern Blvd.</p>
+              <p> Halal chicken and vegetarian options available.</p>
             </div>
           </div>
-
+          <div class="modal-footer">
+            <h3>modoo</h3>
+          </div>
         </div>
-      </div>
 
-      <div class="contact-modal">
-        <div id="contact-modal" class="modal">
+      </div> <!-- end about-modal div -->
+    </div> <!-- end about div -->
 
-          <!-- Modal content -->
-          <div class="modal-content">
-            <div class="modal-header">
-              <span class="close">&times;</span>
-              <h2>contact</h2>
-            </div>
-            <div class="modal-body">
-              <div class="form-container">
-                <form action="/action_page.php">
-                  <div class="row">
-                    <div class="col-25">
-                      <label for="name">Name</label>
-                    </div>
-                    <div class="col-75">
-                      <input type="text" id="name" name="name" placeholder="Your name..">
-                    </div>
+    <div class="contact">
+      <div id="contact-modal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+          <div class="modal-header">
+            <span class="close">&times;</span>
+            <h2>contact</h2>
+          </div> <!-- end of modal-header div -->
+          <div class="modal-body">
+            <div class="form-container">
+              <form action="/action_page.php">
+                <div class="row">
+                  <div class="col-25">
+                    <label for="name">Name</label>
                   </div>
-                  <div class="row">
-                    <div class="col-25">
-                      <label for="phone">Phone</label>
-                    </div>
-                    <div class="col-75">
-                      <input type="text" id="phone" name="phone" placeholder="Your phone number..">
-                    </div>
+                  <div class="col-75">
+                    <input type="text" id="name" name="name" placeholder="Your name..">
                   </div>
-                  <div class="row">
-                    <div class="col-25">
-                      <label for="email">Email</label>
-                    </div>
-                    <div class="col-75">
-                      <input type="text" id="email" name="email" placeholder="Your email..">
-                    </div>
+                </div>
+                <div class="row">
+                  <div class="col-25">
+                    <label for="phone">Phone</label>
                   </div>
-                  <div class="row">
-                    <div class="col-25">
-                      <label for="subject">Subject</label>
-                    </div>
-                    <div class="col-75">
-                      <textarea id="subject" name="subject" placeholder="Write something.." style="height:150px"></textarea>
-                    </div>
+                  <div class="col-75">
+                    <input type="text" id="phone" name="phone" placeholder="Your phone number..">
                   </div>
-                  <div class="row">
-                    <input type="submit" value="Submit">
+                </div>
+                <div class="row">
+                  <div class="col-25">
+                    <label for="email">Email</label>
                   </div>
-                </form>
+                  <div class="col-75">
+                    <input type="text" id="email" name="email" placeholder="Your email..">
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-25">
+                    <label for="subject">Subject</label>
+                  </div>
+                  <div class="col-75">
+                    <textarea id="subject" name="subject" placeholder="Write something.." style="height:150px"></textarea>
+                  </div>
+                </div>
+                <div class="row">
+                  <input type="submit" value="Submit">
+                </div>
+              </form>
+            </div> <!-- end form-container div -->
+            <div class="map">
+              <div class="mapouter">
+                <div class="gmap_canvas">
+                  <iframe width="100%" height="395" id="gmap_canvas" src="https://maps.google.com/maps?q=216-17%20Northern%20Blvd%20Bayside%2C%20NY%2011361&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+                  <a href="https://www.pureblack.de">pureblack.de</a>
+                </div><style>.mapouter{text-align:left;height:395px;width:100%;}.gmap_canvas {overflow:hidden;background:none!important;height:395px;width:100%;}</style>
               </div>
             </div>
-            <div class="modal-footer">
-              <h3>modoo</h3>
-              <p>347-836-8382</p>
+          </div> <!-- end modal-body div -->
+          <div class="modal-footer">
+            <h3>modoo</h3>
+            <p>347-836-8382</p>
+          </div>  <!-- end of modal-footer div -->
+        </div> <!-- end of modal-content div -->
 
+      </div> <!-- end of contact-modal div -->
+    </div> <!-- end contact div -->
+
+    <div id="dine-in-modal">
+      <div class="dine-in-content">
+        <span class="close">&times;</span>
+        <h3>Dine in:</h3>
+        <div class="dine-in-form">
+          <form action="/action_page.php">
+            <div class="row">
+              <label for="reservation-name">Name</label>
+              <input type="text" id="reservation-name" name="reservation-name" placeholder="Your name..">
             </div>
-          </div>
-
-        </div>
-      </div>
+            <div class="row">
+              <label for="party">Party</label>
+              <input type="number" id="party" name="party" placeholder="2 Guests" min="1" max="50">
+            </div>
+            <div class="row">
+              <label for="date">Date</label>
+              <input type="datetime-local" name="date">
+            </div>
+              <input type="submit" value="Reserve">
+          </form>
+        </div> <!-- end dine-in-form div -->
+      </div> <!-- end dine-in-content div -->
+    </div> <!-- end dine-in-modal div -->
 
   </body>
 </html>

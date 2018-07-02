@@ -33,6 +33,19 @@ body {
   border-bottom: 2px solid #ff8d00;
 }
 
+#logo {
+  position: absolute;
+  width: 35px;
+  height: 32px;
+  top: 9px;
+  left: 7px;
+}
+
+#logo-img {
+  width: 100%;
+  opacity: 0.9;
+}
+
 .header-text {
   text-decoration: none;
   color: white;
@@ -54,7 +67,6 @@ body {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  min-width: 500px;
 }
 
 .bg-img-tint {
@@ -69,7 +81,7 @@ body {
   top: 40%;
   width: 100%;
   text-align: center;
-  font-size: 15px;
+  font-size: 16px;
 }
 
 .location-cont-div {
@@ -80,11 +92,7 @@ body {
   color: #fbffef;
   padding: 5px;
   text-shadow: 1px 7px 7px #000000;
-  /* border: 2px solid #ffffff91;
-  border-bottom-color: #1e1c1c;
-  border-top-color: #1e1c1c;
-  border-left-color: #ff8d0100;
-  border-right-color: #ff8d0100; */
+  letter-spacing: 0.5px;
 }
 
 .cont {
@@ -110,56 +118,13 @@ body {
 
 .cover-text:hover {
   background-color: #000000a6;
-  /* color: black; */
   border: 2px solid #ff8d00;
 }
 
 .dine-in {
   border: 2px solid #ff8d00;
-  padding: 8px 50px;
-  margin: 20px;
-  background-color: #17171782;
-  text-shadow: 1px 7px 7px #000000;
 }
 
-.dine-in:hover {
-  background-color: #000000a6;
-  border: 2px solid #ff8d00;
-}
-
-.logo {
-  width: 105px;
-  position: absolute;
-  top: 70%;
-  left: 90%;
-}
-
-/* .restaurant-name {
-  position: absolute;
-  bottom: 125px;
-  left: 14px;
-  font-size: 64px;
-  color: #fff;
-  font-weight: 400;
-  font-variant: small-caps;
-  min-width: 600px;
-  text-decoration: none;
-  color: #fff;
-  text-transform: lowercase;
-  font-family: inherit;
-  font-size: 16px;
-} */
-
-/* .container {
-    width: 50%;
-    height: 600px;
-    background-color: #5f5b5b;
-    background-size: cover;
-    margin-top: 15px;
-    border: 2px solid #0000007a;
-    display: block;
-    float: left;
-} */
 .bottom-container {
   height: 93px;
   width: 100%;
@@ -176,13 +141,31 @@ body {
   float: left;
 }
 
-.section {
-  display: inline-block;
-  width: 106px;
-  height: 100%;
+.about-body {
+  width: 100%;
+  height: 50%;
+}
+
+#about-pic {
+  width: 40%;
+  display: block;
   float: left;
-  text-align: center;
-  text-transform: uppercase;
+}
+
+#about-pic img {
+  width: 100%;
+  padding: 5px;
+}
+
+.about-text {
+  display: block;
+  float: left;
+  width: 60%;
+}
+
+.about-text p {
+  padding: 23px;
+  font-size: 14px;
 }
 
 .col-odd {
@@ -197,13 +180,7 @@ body {
   height: 20%;
   width: 100%;
   margin: 4px;
-}
-
-.row-day {
-  height: 25%;
-  font-size: 17px;
-  /* padding-top: 11px;  */
-  padding-top: 2px;
+  padding-right: 20px;
 }
 
 .phone {
@@ -215,79 +192,69 @@ body {
   margin-right: 35px;
 }
 
-/* Add a background color to the top navigation */
 .topnav {
-    background-color: #1d1d1d;
-    overflow: hidden;
-}
-
-/* Style the links inside the navigation bar */
-
-/* Change the color of links on hover */
-.topnav a:hover {
-    /* color: #ff7349; */
-}
-
-/* Hide the link that should open and close the topnav on small screens */
-.topnav .icon {
-    display: none;
+  background-color: #1d1d1d;
+  overflow: hidden;
 }
 
 /* The Modal (background) */
 .modal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
-    left: 0;
-    top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-    -webkit-animation-name: fadeIn; /* Fade in the background */
-    -webkit-animation-duration: 0.4s;
-    animation-name: fadeIn;
-    animation-duration: 0.4s
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  -webkit-animation-name: fadeIn; /* Fade in the background */
+  -webkit-animation-duration: 0.4s;
+  animation-name: fadeIn;
+  animation-duration: 0.4s
 }
 
 /* Modal Content */
 .modal-content {
-    position: fixed;
-    bottom: 0;
-    background-color: #fefefe;
-    width: 100%;
-    -webkit-animation-name: slideIn;
-    -webkit-animation-duration: 0.4s;
-    animation-name: slideIn;
-    animation-duration: 0.4s
+  position: fixed;
+  bottom: 0;
+  background-color: #f5f5f5;
+  width: 100%;
+  -webkit-animation-name: slideIn;
+  -webkit-animation-duration: 0.4s;
+  animation-name: slideIn;
+  animation-duration: 0.4s
 }
 
 /* The Close Button */
 .close {
-    color: #ff8d00;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
+  color: #ff8d00;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
 }
 
 .close:hover,
 .close:focus {
-    color: #fff;
-    text-decoration: none;
-    cursor: pointer;
+  color: #fff;
+  text-decoration: none;
+  cursor: pointer;
 }
 
 .modal-header {
-    padding: 2px 16px;
-    background-color: #201b17;
-    color: white;
+  padding: 2px 16px;
+  background-color: #201b17;
+  color: white;
 }
 
 .modal-footer {
-    padding: 2px 16px;
-    background-color: #201b17;
-    color: white;
+  padding: 2px 16px;
+  background-color: #201b17;
+  color: white;
+  display: block;
+  float: left;
+  width: 100%;
 }
 .modal-footer h3 {
   display: inline-block;
@@ -320,73 +287,149 @@ body {
 }
 
 input[type=text], select, textarea {
-    width: 100%;
-    padding: 12px;
-    border: 1px solid #000;
-    border-radius: 4px;
-    resize: vertical;
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #000;
+  border-radius: 4px;
+  resize: vertical;
 }
 
 label {
-    padding: 12px 12px 12px 0;
-    display: inline-block;
+  padding: 12px 12px 12px 0;
+  display: inline-block;
 }
 
 input[type=submit] {
-    background-color: #313131;
-    color: white;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    float: right;
+  background-color: #353535;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
 }
 
 input[type=submit]:hover {
-    background-color: #545454;
+  background-color: #545454;
 }
 
 .form-container {
-    background-color: #f2f2f2;
-    padding: 20px;
-    width: 60%;
+  background-color: #f2f2f2;
+  padding: 20px;
+  width: 65%;
+  display: block;
+  float: left;
 }
 
 .col-25 {
-    float: left;
-    width: 25%;
-    margin-top: 6px;
+  float: left;
+  width: 25%;
+  margin-top: 6px;
 }
 
 .col-75 {
-    float: left;
-    width: 75%;
-    margin-top: 6px;
+  float: left;
+  width: 75%;
+  margin-top: 6px;
 }
 
 /* Clear floats after the columns */
 .row:after {
-    content: "";
-    display: table;
-    clear: both;
+  content: "";
+  display: table;
+  clear: both;
 }
 
-/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
-@media screen and (max-width: 1040px) {
-  /* .topnav a:not(:first-child) {display: none;}
-  .topnav a.icon {
-    float: right;
-    display: block;
-  } */
-  #bg-img {
-    height: 100%;
-    width: 100%;
-    background-position: center;
-  }
-  .logo {
-    width: 90px;
-    left: 80%;
-    top: 75%;
+.map {
+  display: block;
+  float: left;
+  width: 35%;
+}
+
+#dine-in-modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  -webkit-animation-name: fadeIn; /* Fade in the background */
+  -webkit-animation-duration: 0.4s;
+  animation-name: fadeIn;
+  animation-duration: 0.4s
+}
+
+.dine-in-content {
+  position: fixed;
+  bottom: 15px;
+  background-color: #111111;
+  width: 340px;
+  padding: 5px;
+  -webkit-animation-name: slideIn;
+  -webkit-animation-duration: 0.4s;
+  animation-name: slideIn;
+  animation-duration: 0.4s
+}
+
+.dine-in-content h3 {
+  display: block;
+  color: #fff;
+  padding: 4px 10px;
+}
+
+.dine-in-form {
+  width: 100%;
+}
+
+.dine-in-form .row {
+  display: block;
+  margin-left: 10px;
+}
+
+.dine-in-content label {
+  padding: 13px 0;
+  color: #fff;
+}
+
+.dine-in-content input {
+  padding: 11px;
+  border: 1px solid #464646;;
+  border-radius: 4px;
+  margin: 10px 10px;
+}
+
+.dine-in-content input[type=text] {
+  width: 225px;
+  resize: vertical;
+  margin-left: 18px;
+}
+
+.dine-in-content input[type=number] {
+  width: 85px;
+}
+
+.dine-in-content input[type=datetime-local] {
+  width: 225px;
+  margin: 10px 0 10px 18px;
+}
+
+.submit-div {
+  display: inline-block;
+  float: right;
+}
+
+.dine-in-form input[type=submit] {
+  margin: 7px 20px;
+  padding: 12px;
+}
+
+@media screen and (max-width: 1142px) {
+  #logo {
+    display: none;
   }
   .bottom-container {
     height: 14vh;
@@ -394,38 +437,40 @@ input[type=submit]:hover {
 }
 
 @media screen and (max-width: 795px) {
-  #bg-img {
-    height: 100%;
+  .cover-bg {
     width: 100%;
-    background-position: center;
   }
   .header-section {
     padding: 17px 0 10px;
+    height: 8vh;
   }
   .header-text {
-    font-size: 12px;
+    font-size: 15px;
   }
   .cover-text-div {
     letter-spacing: 1px;
   }
   .cover-text {
-    padding: 15px 30px;
-    margin: 15px;
-  }
-  .dine-in {
-    padding: 15px 30px;
+    padding: 15px 40px;
     margin: 15px;
   }
   .bottom-container {
-    height: 14vh;
+    height: 13vh;
   }
   .logo {
     width: 80px;
     left: 78%;
     top: 75%;
   }
-  .section {
-    width: 52px;
+  #about-pic {
+    width: 50%;
+  }
+  .about-text {
+    width: 50%;
+  }
+  .about-text p {
+    padding: 12px;
+    font-size: 13px;
   }
   .row {
     font-size: 12px;
@@ -438,8 +483,28 @@ input[type=submit]:hover {
     font-size: 14px;
     margin: 15px;
   }
+  .form-container {
+    width: 100%;
+    padding: 10px 50px 20px;
+  }
   .col-25, .col-75, input[type=submit] {
       width: 100%;
-      margin-top: 0;
+      margin-top: 3px;
+  }
+  .map {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  #about-pic {
+    width: 100%;
+  }
+  .about-text {
+    width: 100%;
+  }
+  .about-text p {
+    padding: 3px 16px;
+    font-size: 13px;
   }
 }
