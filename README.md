@@ -12,3 +12,5 @@ My first website ever :)
 ### Steps to open project: 
 1. Clone this repo 
 2. Open modoo.html in your browser 
+
+Live site: https://gg-1414.github.io/Modoo-website/
